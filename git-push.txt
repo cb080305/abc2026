@@ -1,0 +1,256 @@
+           .-------------------------:                    cbx2012@cachyos-x8664
+          .+=========================.                    ---------------------
+         :++===++==================-       :++-           OS: CachyOS x86_64
+        :*++====+++++=============-        .==:           Host: Latitude E5420 (01)
+       -*+++=====+***++==========:                        Kernel: Linux 6.16.3-1-cachyos
+      =*++++========------------:                         Uptime: 19 days, 8 hours, 1 min
+     =*+++++=====-                     ...                Packages: 1430 (pacman)
+   .+*+++++=-===:                    .=+++=:              Shell: fish 4.0.2
+  :++++=====-==:                     -*****+              Display (AUO193C): 1366x768 @ 60 Hz in 14" [Built-in]
+ :++========-=.                      .=+**+.              DE: KDE Plasma 6.4.4
+.+==========-.                          .                 WM: KWin (Wayland)
+ :+++++++====-                                .--==-.     WM Theme: Breeze
+  :++==========.                             :+++++++:    Theme: Breeze (Light) [Qt], Breeze [GTK2/3]
+   .-===========.                            =*****+*+    Icons: breeze [Qt], breeze [GTK2/3/4]
+    .-===========:                           .+*****+:    Font: Microsoft YaHei UI (10pt) [Qt], Microsoft YaHei UI (10pt) [GTK2/3/4]
+      -=======++++:::::::::::::::::::::::::-:  .---:      Cursor: breeze (30px)
+       :======++++====+++******************=.             Terminal: konsole 25.8.0
+        :=====+++==========++++++++++++++*-               Terminal Font: DejaVu Sans Mono (10pt)
+         .====++==============++++++++++*-                CPU: Intel(R) Core(TM) i3-2350M (4) @ 2.30 GHz
+          .===+==================+++++++:                 GPU: Intel 2nd Generation Core Processor Family Integrated Graphics Controller @ 1.15 GHz [Integrated]
+           .-=======================+++:                  Memory: 4.36 GiB / 7.65 GiB (57%)
+             ..........................                   Swap: 2.68 GiB / 13.65 GiB (20%)
+                                                          Disk (/): 52.36 GiB / 88.03 GiB (59%) - ext4
+                                                          Disk (/home/cbx2012/此电脑/C盘Windows): 51.72 GiB / 102.68 GiB (50%) - fuseblk
+                                                          Disk (/home/cbx2012/此电脑/D盘): 27.65 GiB / 61.66 GiB (45%) - fuseblk
+                                                          Disk (/home/cbx2012/此电脑/E盘): 72.84 GiB / 97.66 GiB (75%) - fuseblk
+                                                          Disk (/home/cbx2012/此电脑/LinuxLite系统): 14.17 GiB / 14.99 GiB (95%) - ext4
+                                                          Disk (/home/cbx2012/此电脑/娱乐): 118.33 GiB / 219.86 GiB (54%) - fuseblk
+                                                          Disk (/home/cbx2012/此电脑/文档): 79.98 GiB / 262.00 GiB (31%) - fuseblk
+                                                          Disk (/home/cbx2012/此电脑/软件): 3.34 GiB / 256.00 GiB (1%) - fuseblk
+                                                          Local IP (enp10s0): 192.168.1.185/24
+                                                          Battery (DELL 5CGM426): 6% [Charging, AC Connected, Critical]
+                                                          Locale: zh_CN.UTF-8
+
+                                                                                  
+                                                                                  
+~/Hugo/aaa
+❯ git init
+提示： 使用 'master' 作为初始分支的名称。这个默认分支名称可能会更改。要在新仓库中
+提示： 配置使用初始分支名，并消除这条警告，请执行：
+提示：
+提示：  git config --global init.defaultBranch <名称>
+提示：
+提示： 除了 'master' 之外，通常选定的名字有 'main'、'trunk' 和 'development'。
+提示： 可以通过以下命令重命名刚创建的分支：
+提示：
+提示：  git branch -m <name>
+提示：
+提示： Disable this message with "git config set advice.defaultBranchName false"
+已初始化空的 Git 仓库于 /home/cbx2012/Hugo/aaa/.git/
+
+~/Hugo/aaa master
+❯ echo "# abc2026" >> README.md
+
+~/Hugo/aaa master*
+❯ git add .
+
+~/Hugo/aaa master*
+❯ git commit -m "first commit"
+[master（根提交） 1c4e767] first commit
+ 3 files changed, 20 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 img/mpv-shot0007.jpg
+ create mode 100644 index.html
+
+~/Hugo/aaa master
+❯ git branch -M main
+
+~/Hugo/aaa main
+❯ git remote add origin https://github.com/cb080305/abc2026.git
+
+~/Hugo/aaa main
+❯ git push -u origin main
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+致命错误：无法访问 'https://github.com/cb080305/abc2026.git/'：Failed to connect to github.com port 443 after 133711 ms: Could not connect to server
+
+~/Hugo/aaa main 4m 7s
+❯ git push -u origin main
+致命错误：无法访问 'https://github.com/cb080305/abc2026.git/'：OpenSSL SSL_read: OpenSSL/3.5.2: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+
+~/Hugo/aaa main 1m 30s
+❯ git push -u origin main
+致命错误：无法访问 'https://github.com/cb080305/abc2026.git/'：OpenSSL SSL_read: OpenSSL/3.5.2: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+
+~/Hugo/aaa main 1m 30s
+❯ git push -u origin main
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+致命错误：'https://github.com/cb080305/abc2026.git/' 鉴权失败
+
+~/Hugo/aaa main 20s
+❯ git push -u origin main
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+致命错误：'https://github.com/cb080305/abc2026.git/' 鉴权失败
+
+~/Hugo/aaa main 23s
+❯ git push -u origin main
+Username for 'https://github.com': cb080305@sina.com
+Password for 'https://cb080305%40sina.com@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+致命错误：'https://github.com/cb080305/abc2026.git/' 鉴权失败
+
+~/Hugo/aaa main 19s
+❯ git push -u origin main
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+致命错误：'https://github.com/cb080305/abc2026.git/' 鉴权失败
+
+~/Hugo/aaa main 12s
+❯ git push -u origin main
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+致命错误：'https://github.com/cb080305/abc2026.git/' 鉴权失败
+
+~/Hugo/aaa main 9s
+❯ git branch -M master
+
+~/Hugo/aaa master
+❯ git push -u origin main
+错误：源引用规格 main 没有匹配
+错误：无法推送一些引用到 'https://github.com/cb080305/abc2026.git'
+
+~/Hugo/aaa master
+❯ git push -u origin master
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+致命错误：'https://github.com/cb080305/abc2026.git/' 鉴权失败
+
+~/Hugo/aaa master 9s
+❯ git push -u origin master
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+枚举对象中: 6, 完成.
+对象计数中: 100% (6/6), 完成.
+使用 4 个线程进行压缩
+压缩对象中: 100% (4/4), 完成.
+写入对象中: 100% (6/6), 332.46 KiB | 12.31 MiB/s, 完成.
+总共 6（差异 0），复用 0（差异 0），包复用 0（来自  0 个包）
+To https://github.com/cb080305/abc2026.git
+ * [new branch]      master -> master
+分支 'master' 设置为跟踪 'origin/master'。
+
+~/Hugo/aaa master 25s
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+Everything up-to-date
+
+~/Hugo/aaa master 23s
+❯ git push -u origin master
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+分支 'master' 设置为跟踪 'origin/master'。
+Everything up-to-date
+
+~/Hugo/aaa master 14s
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+致命错误：'https://github.com/cb080305/abc2026.git/' 鉴权失败
+
+~/Hugo/aaa master 8s
+❯ 
+
+~/Hugo/aaa master 8s
+❯ 
+
+~/Hugo/aaa master 8s
+❯ git push -u origin master
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+分支 'master' 设置为跟踪 'origin/master'。
+Everything up-to-date
+
+~/Hugo/aaa master 16s
+❯ git add .
+
+~/Hugo/aaa master
+❯ git commit -m "第二次 commit"
+位于分支 master
+您的分支与上游分支 'origin/master' 一致。
+
+无文件要提交，干净的工作区
+
+~/Hugo/aaa master
+❯ git commit -m "第二次 commit"
+位于分支 master
+您的分支与上游分支 'origin/master' 一致。
+
+未跟踪的文件:
+  （使用 "git add <文件>..." 以包含要提交的内容）
+        "\345\261\217\345\271\225\346\210\252\345\233\276_20251204_170558.png"
+
+提交为空，但是存在尚未跟踪的文件（使用 "git add" 建立跟踪）
+
+~/Hugo/aaa master*
+❯ git add .
+
+~/Hugo/aaa master*
+❯ git commit -m "第二次 commit"
+[master e45dc00] 第二次 commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "\345\261\217\345\271\225\346\210\252\345\233\276_20251204_170558.png"
+
+~/Hugo/aaa master ⇡
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+致命错误：'https://github.com/cb080305/abc2026.git/' 鉴权失败
+
+~/Hugo/aaa master ⇡ 8s
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+枚举对象中: 4, 完成.
+对象计数中: 100% (4/4), 完成.
+使用 4 个线程进行压缩
+压缩对象中: 100% (3/3), 完成.
+写入对象中: 100% (3/3), 722.35 KiB | 16.80 MiB/s, 完成.
+总共 3（差异 0），复用 0（差异 0），包复用 0（来自  0 个包）
+To https://github.com/cb080305/abc2026.git
+   1c4e767..e45dc00  master -> master
+
+~/Hugo/aaa master 10s
+❯ git add .
+
+~/Hugo/aaa master*
+❯ git commit -m "第三次 commit"
+[master f0a1cd3] 第三次 commit
+ 1 file changed, 1 insertion(+)
+
+~/Hugo/aaa master ⇡
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+枚举对象中: 5, 完成.
+对象计数中: 100% (5/5), 完成.
+使用 4 个线程进行压缩
+压缩对象中: 100% (3/3), 完成.
+写入对象中: 100% (3/3), 352 字节 | 352.00 KiB/s, 完成.
+总共 3（差异 2），复用 0（差异 0），包复用 0（来自  0 个包）
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/cb080305/abc2026.git
+   e45dc00..f0a1cd3  master -> master
+
+~/Hugo/aaa master 18s
+❯ 
