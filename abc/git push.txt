@@ -1,0 +1,74 @@
+~/Hugo
+❯ rm -rf abc2026/
+
+~/Hugo
+❯ cd cb1981/
+
+~/Hugo/cb1981
+❯ pwd
+/home/cbx2012/Hugo/cb1981
+
+~/Hugo/cb1981
+❯
+
+~/Hugo/cb1981
+❯ git https://github.com/cb080305/abc2026.git
+git：'https://github.com/cb080305/abc2026.git' 不是一个 git 命令。参见 'git --help'。
+
+~/Hugo/cb1981
+❯ git clone https://github.com/cb080305/abc2026.git
+正克隆到 'abc2026'...
+remote: Enumerating objects: 31, done.
+remote: Counting objects: 100% (31/31), done.
+remote: Compressing objects: 100% (24/24), done.
+remote: Total 31 (delta 12), reused 17 (delta 4), pack-reused 0 (from 0)
+接收对象中: 100% (31/31), 1.04 MiB | 13.00 KiB/s, 完成.
+处理 delta 中: 100% (12/12), 完成.
+
+~/Hugo/cb1981 1m 23s
+❯ cd abc2026/
+
+~/Hugo/cb1981/abc2026 master
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com':
+Everything up-to-date
+
+~/Hugo/cb1981/abc2026 master* 23s
+❯ git add .
+
+~/Hugo/cb1981/abc2026 master*
+❯ git commit -m "成功的一次"
+[master 36c6351] 成功的一次
+ 1 file changed, 1 insertion(+)
+
+~/Hugo/cb1981/abc2026 master ⇡
+❯ git push
+致命错误：无法访问 'https://github.com/cb080305/abc2026.git/'：OpenSSL SSL_read: OpenSSL/3.5.2: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+
+~/Hugo/cb1981/abc2026 master ⇡ 1m 30s
+❯ git push
+致命错误：无法访问 'https://github.com/cb080305/abc2026.git/'：OpenSSL SSL_read: OpenSSL/3.5.2: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+
+~/Hugo/cb1981/abc2026 master ⇡ 1m 30s
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com':
+致命错误：无法访问 'https://github.com/cb080305/abc2026.git/'：OpenSSL SSL_read: OpenSSL/3.5.2: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+
+~/Hugo/cb1981/abc2026 master ⇡ 3m 44s
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com':
+枚举对象中: 5, 完成.
+对象计数中: 100% (5/5), 完成.
+使用 4 个线程进行压缩
+压缩对象中: 100% (3/3), 完成.
+写入对象中: 100% (3/3), 381 字节 | 381.00 KiB/s, 完成.
+总共 3（差异 1），复用 0（差异 0），包复用 0（来自  0 个包）
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/cb080305/abc2026.git
+   9bf6aa7..36c6351  master -> master
+
+~/Hugo/cb1981/abc2026 master 18s
+❯

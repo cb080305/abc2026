@@ -1,0 +1,27 @@
+sudo find / -path /home/cbx2012/此电脑 -prune -o -type d -name "pacman" -print 2>/dev/null
+
+sudo find / -path /home/cbx2012/此电脑 -prune -o -type f -name "pacman" -print 2>/dev/null
+
+
+❯ sudo find / -path /home/cbx2012/此电脑 -prune -o -name "pacman" -print 2>/dev/null
+/home/cbx2012/.cache/fish/pacman
+/usr/share/pacman
+/usr/share/bash-completion/completions/pacman
+/usr/bin/pacman
+/var/cache/pacman
+/var/lib/pacman
+
+~
+❯ sudo find / -path /home/cbx2012/此电脑 -prune -o -type f -name "pacman" -print 2>/dev/null
+/home/cbx2012/.cache/fish/pacman
+/usr/share/bash-completion/completions/pacman
+/usr/bin/pacman
+
+~
+❯ sudo find / -path /home/cbx2012/此电脑 -prune -o -type d -name "pacman" -print 2>/dev/null
+/usr/share/pacman
+/var/cache/pacman
+/var/lib/pacman
+
+~
+❯

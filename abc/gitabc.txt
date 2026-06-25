@@ -1,0 +1,24 @@
+
+git 推送同步 拉取
+
+git add .
+git commit -m "first commit"
+git push -u origin master
+push 推送同步需要以上三个步骤
+
+git pull
+拉取只需要这一个步骤
+
+
+
+git commit -m "first commit"
+git commit 直接提交 自动打开一个编辑器 怎么输入提交说明 如何保存
+
+
+❯ git push
+致命错误：无法访问 'https://github.com/cb080305/abc2026.git/'：OpenSSL SSL_read: OpenSSL/3.5.2: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+
+master
+
+❯ git push
+致命错误：无法访问 'https://github.com/cb080305/abc2026.git/'：OpenSSL SSL_read: OpenSSL/3.5.2: error:0A000126:SSL routines::unexpected eof while reading, errno 0

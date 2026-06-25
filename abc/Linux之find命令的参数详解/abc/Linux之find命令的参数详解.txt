@@ -1,0 +1,17 @@
+Linux之find命令的参数详解
+cloud.tencent.com/developer/article/2015228
+
+Linux find 命令
+https://cloud.tencent.com/developer/article/1392910
+
+Linux 命令 | find
+https://cloud.tencent.com/developer/article/2329116
+
+find 命令的参数详解
+https://cloud.tencent.com/developer/article/2043555
+
+
+https://cloud.tencent.com/developer/information/linux find 命令参数
+https://cloud.tencent.com/developer/information/linux%20find%20命令参数
+
+https://cloud.tencent.com/developer/article/2124245

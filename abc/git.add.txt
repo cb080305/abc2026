@@ -1,0 +1,372 @@
+           .-------------------------:                    cbx2012@cachyos-x8664
+          .+=========================.                    ---------------------
+         :++===++==================-       :++-           OS: CachyOS x86_64
+        :*++====+++++=============-        .==:           Host: Latitude E5420 (01)
+       -*+++=====+***++==========:                        Kernel: Linux 6.16.3-1-cachyos
+      =*++++========------------:                         Uptime: 7 hours, 27 mins
+     =*+++++=====-                     ...                Packages: 1430 (pacman)
+   .+*+++++=-===:                    .=+++=:              Shell: fish 4.0.2
+  :++++=====-==:                     -*****+              Display (AUO193C): 1366x768 @ 60 Hz in 14" [Built-in]
+ :++========-=.                      .=+**+.              DE: KDE Plasma 6.4.4
+.+==========-.                          .                 WM: KWin (Wayland)
+ :+++++++====-                                .--==-.     WM Theme: Breeze
+  :++==========.                             :+++++++:    Theme: Breeze (Light) [Qt], Breeze [GTK2/3]
+   .-===========.                            =*****+*+    Icons: breeze [Qt], breeze [GTK2/3/4]
+    .-===========:                           .+*****+:    Font: Microsoft YaHei UI (10pt) [Qt], Microsoft YaHei UI (10pt) [GTK2/3/4]
+      -=======++++:::::::::::::::::::::::::-:  .---:      Cursor: breeze (30px)
+       :======++++====+++******************=.             Terminal: konsole 25.8.0
+        :=====+++==========++++++++++++++*-               Terminal Font: DejaVu Sans Mono (10pt)
+         .====++==============++++++++++*-                CPU: Intel(R) Core(TM) i3-2350M (4) @ 2.30 GHz
+          .===+==================+++++++:                 GPU: Intel 2nd Generation Core Processor Family Integrated Graphics Controller @ 1.15 GHz [Integrated]
+           .-=======================+++:                  Memory: 3.21 GiB / 7.65 GiB (42%)
+             ..........................                   Swap: 2.16 GiB / 13.65 GiB (16%)
+                                                          Disk (/): 56.71 GiB / 88.03 GiB (64%) - ext4
+                                                          Disk (/home/cbx2012/此电脑/C盘Windows): 51.72 GiB / 102.68 GiB (50%) - fuseblk
+                                                          Disk (/home/cbx2012/此电脑/D盘): 27.65 GiB / 61.66 GiB (45%) - fuseblk
+                                                          Disk (/home/cbx2012/此电脑/E盘): 72.84 GiB / 97.66 GiB (75%) - fuseblk
+                                                          Disk (/home/cbx2012/此电脑/LinuxLite系统): 14.17 GiB / 14.99 GiB (95%) - ext4
+                                                          Disk (/home/cbx2012/此电脑/娱乐): 118.33 GiB / 219.86 GiB (54%) - fuseblk
+                                                          Disk (/home/cbx2012/此电脑/文档): 79.98 GiB / 262.00 GiB (31%) - fuseblk
+                                                          Disk (/home/cbx2012/此电脑/软件): 3.34 GiB / 256.00 GiB (1%) - fuseblk
+                                                          Local IP (enp10s0): 192.168.1.185/24
+                                                          Battery (DELL 5CGM426): 3% [Charging, AC Connected, Critical]
+                                                          Locale: zh_CN.UTF-8
+
+                                                                                  
+                                                                                  
+~/Hugo
+❯ rm -rf abc2026/
+
+~/Hugo
+❯ cd cb1981/
+
+~/Hugo/cb1981
+❯ pwd
+/home/cbx2012/Hugo/cb1981
+
+~/Hugo/cb1981
+❯ 
+
+~/Hugo/cb1981
+❯ git https://github.com/cb080305/abc2026.git
+git：'https://github.com/cb080305/abc2026.git' 不是一个 git 命令。参见 'git --help'。
+
+~/Hugo/cb1981
+❯ git clone https://github.com/cb080305/abc2026.git
+正克隆到 'abc2026'...
+remote: Enumerating objects: 31, done.
+remote: Counting objects: 100% (31/31), done.
+remote: Compressing objects: 100% (24/24), done.
+remote: Total 31 (delta 12), reused 17 (delta 4), pack-reused 0 (from 0)
+接收对象中: 100% (31/31), 1.04 MiB | 13.00 KiB/s, 完成.
+处理 delta 中: 100% (12/12), 完成.
+
+~/Hugo/cb1981 1m 23s
+❯ cd abc2026/
+
+~/Hugo/cb1981/abc2026 master
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+Everything up-to-date
+
+~/Hugo/cb1981/abc2026 master* 23s
+❯ git add .
+
+~/Hugo/cb1981/abc2026 master*
+❯ git commit -m "成功的一次"
+[master 36c6351] 成功的一次
+ 1 file changed, 1 insertion(+)
+
+~/Hugo/cb1981/abc2026 master ⇡
+❯ git push
+致命错误：无法访问 'https://github.com/cb080305/abc2026.git/'：OpenSSL SSL_read: OpenSSL/3.5.2: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+
+~/Hugo/cb1981/abc2026 master ⇡ 1m 30s
+❯ git push
+致命错误：无法访问 'https://github.com/cb080305/abc2026.git/'：OpenSSL SSL_read: OpenSSL/3.5.2: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+
+~/Hugo/cb1981/abc2026 master ⇡ 1m 30s
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+致命错误：无法访问 'https://github.com/cb080305/abc2026.git/'：OpenSSL SSL_read: OpenSSL/3.5.2: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+
+~/Hugo/cb1981/abc2026 master ⇡ 3m 44s
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+枚举对象中: 5, 完成.
+对象计数中: 100% (5/5), 完成.
+使用 4 个线程进行压缩
+压缩对象中: 100% (3/3), 完成.
+写入对象中: 100% (3/3), 381 字节 | 381.00 KiB/s, 完成.
+总共 3（差异 1），复用 0（差异 0），包复用 0（来自  0 个包）
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/cb080305/abc2026.git
+   9bf6aa7..36c6351  master -> master
+
+~/Hugo/cb1981/abc2026 master 18s
+❯ pwd
+/home/cbx2012/Hugo/cb1981/abc2026
+
+~/Hugo/cb1981/abc2026 master
+❯ 
+
+~/Hugo/cb1981/abc2026 master
+❯ git pull
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+展开对象中: 100% (6/6), 1.97 KiB | 1.97 MiB/s, 完成.
+来自 https://github.com/cb080305/abc2026
+   36c6351..3780142  master     -> origin/master
+更新 36c6351..3780142
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+~/Hugo/cb1981/abc2026 master
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+Everything up-to-date
+
+~/Hugo/cb1981/abc2026 master* 13s
+❯ git add .
+
+~/Hugo/cb1981/abc2026 master*
+❯ git commit -m "第二次修改"
+[master 5fb1749] 第二次修改
+ 1 file changed, 2 insertions(+)
+
+~/Hugo/cb1981/abc2026 master ⇡
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+枚举对象中: 5, 完成.
+对象计数中: 100% (5/5), 完成.
+使用 4 个线程进行压缩
+压缩对象中: 100% (3/3), 完成.
+写入对象中: 100% (3/3), 328 字节 | 328.00 KiB/s, 完成.
+总共 3（差异 2），复用 0（差异 0），包复用 0（来自  0 个包）
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/cb080305/abc2026.git
+   3780142..5fb1749  master -> master
+
+~/Hugo/cb1981/abc2026 master 13s
+❯ git switch cb-branch
+分支 'cb-branch' 设置为跟踪 'origin/cb-branch'。
+切换到一个新分支 'cb-branch'
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+致命错误：'https://github.com/cb080305/abc2026.git/' 鉴权失败
+
+~/Hugo/cb1981/abc2026 cb-branch 27s
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+Everything up-to-date
+
+~/Hugo/cb1981/abc2026 cb-branch 11s
+❯ git add .
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git commit -m "交换分支cb-branch"
+位于分支 cb-branch
+您的分支与上游分支 'origin/cb-branch' 一致。
+
+无文件要提交，干净的工作区
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+Everything up-to-date
+
+~/Hugo/cb1981/abc2026 cb-branch 11s
+❯ git add .
+
+~/Hugo/cb1981/abc2026 cb-branch*
+❯ git commit -m "交换分支cb-branch"
+[cb-branch 23a1873] 交换分支cb-branch
+ 1 file changed, 2 insertions(+)
+
+~/Hugo/cb1981/abc2026 cb-branch ⇡
+❯ git push
+Username for 'https://github.com': cb080305
+Password for 'https://cb080305@github.com': 
+枚举对象中: 5, 完成.
+对象计数中: 100% (5/5), 完成.
+使用 4 个线程进行压缩
+压缩对象中: 100% (3/3), 完成.
+写入对象中: 100% (3/3), 351 字节 | 351.00 KiB/s, 完成.
+总共 3（差异 1），复用 0（差异 0），包复用 0（来自  0 个包）
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/cb080305/abc2026.git
+   7c164da..23a1873  cb-branch -> cb-branch
+
+~/Hugo/cb1981/abc2026 cb-branch 16s
+❯ git switch master
+切换到分支 'master'
+您的分支与上游分支 'origin/master' 一致。
+
+~/Hugo/cb1981/abc2026 master
+❯ git switch cb-branch
+切换到分支 'cb-branch'
+您的分支与上游分支 'origin/cb-branch' 一致。
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git branch -a
+* cb-branch
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/cb-branch
+  remotes/origin/master
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git branch -r
+  origin/HEAD -> origin/master
+  origin/cb-branch
+  origin/master
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git switch master
+切换到分支 'master'
+您的分支与上游分支 'origin/master' 一致。
+
+~/Hugo/cb1981/abc2026 master
+❯ git switch cb-branch
+切换到分支 'cb-branch'
+您的分支与上游分支 'origin/cb-branch' 一致。
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git switch master
+切换到分支 'master'
+您的分支与上游分支 'origin/master' 一致。
+
+~/Hugo/cb1981/abc2026 master
+❯ git switch cb-branch
+切换到分支 'cb-branch'
+您的分支与上游分支 'origin/cb-branch' 一致。
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git switch master
+切换到分支 'master'
+您的分支与上游分支 'origin/master' 一致。
+
+~/Hugo/cb1981/abc2026 master
+❯ git switch cb-branch
+切换到分支 'cb-branch'
+您的分支与上游分支 'origin/cb-branch' 一致。
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git switch cb-branch
+已经位于 'cb-branch'
+您的分支与上游分支 'origin/cb-branch' 一致。
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+展开对象中: 100% (3/3), 999 字节 | 499.00 KiB/s, 完成.
+来自 https://github.com/cb080305/abc2026
+   23a1873..03dc760  cb-branch  -> origin/cb-branch
+更新 23a1873..03dc760
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ 
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git -v
+git version 2.51.0
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git checkout master
+切换到分支 'master'
+您的分支与上游分支 'origin/master' 一致。
+
+~/Hugo/cb1981/abc2026 master
+❯ git checkout cb-branch
+切换到分支 'cb-branch'
+您的分支与上游分支 'origin/cb-branch' 一致。
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git checkout master
+切换到分支 'master'
+您的分支与上游分支 'origin/master' 一致。
+
+~/Hugo/cb1981/abc2026 master
+❯ git checkout cb-branch
+切换到分支 'cb-branch'
+您的分支与上游分支 'origin/cb-branch' 一致。
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+展开对象中: 100% (3/3), 1.04 KiB | 1.04 MiB/s, 完成.
+来自 https://github.com/cb080305/abc2026
+   03dc760..ba82670  cb-branch  -> origin/cb-branch
+更新 03dc760..ba82670
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+~/Hugo/cb1981/abc2026 cb-branch 25s
+❯ git pull
+已经是最新的。
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git checkout cb-branch
+已经位于 'cb-branch'
+您的分支与上游分支 'origin/cb-branch' 一致。
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git checkout master
+切换到分支 'master'
+您的分支与上游分支 'origin/master' 一致。
+
+~/Hugo/cb1981/abc2026 master
+❯ git checkout cb-branch
+切换到分支 'cb-branch'
+您的分支与上游分支 'origin/cb-branch' 一致。
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git checkout master
+切换到分支 'master'
+您的分支与上游分支 'origin/master' 一致。
+
+~/Hugo/cb1981/abc2026 master
+❯ pwd
+/home/cbx2012/Hugo/cb1981/abc2026
+
+~/Hugo/cb1981/abc2026 master
+❯ git checkout cb-branch
+切换到分支 'cb-branch'
+您的分支与上游分支 'origin/cb-branch' 一致。
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ git checkout master
+切换到分支 'master'
+您的分支与上游分支 'origin/master' 一致。
+
+~/Hugo/cb1981/abc2026 master
+❯ git checkout cb-branch
+切换到分支 'cb-branch'
+您的分支与上游分支 'origin/cb-branch' 一致。
+
+~/Hugo/cb1981/abc2026 cb-branch
+❯ 

@@ -1,0 +1,128 @@
+core/glibc                               2.41+r48+g5cb575ca9a3d-1   2.42+r17+gd7274d718e6f-1      1.53 MiB   10.15 MiB
+
+❯ chromium
+/usr/lib/chromium/chromium: /usr/lib/libc.so.6: version `GLIBC_2.42' not found (required by /usr/lib/chromium/chromium)
+
+sudo find / -path /home -prune -o -type f -name "libc.so.6" -print 2>/dev/null
+
+sudo find / -path /home -prune -o -name "libc.so.6" -print 2>/dev/null
+
+sudo find / -path /home -prune -o -name libc.so.6 2>/dev/null
+
+sudo find / -path /home -prune -o -name "libavcodec*" -print 2>/dev/null
+sudo find / -path /home -prune -o -name "*.jpg" -print 2>/dev/null
+
+
+sudo find / -path /home -prune -o -name libc.so.6 -print 2>/dev/null
+sudo find / -path /home -prune -o -name libc.so.6 -print 2>/dev/null
+
+sudo find / -path /home -prune -o -name "libc.so.6" -print 2>/dev/null
+
+❯ sudo find / -path /home -prune -o -name libc.so.6 -print 2>/dev/null
+/usr/lib32/libc.so.6
+/usr/lib/bash/libc.so.6
+/usr/lib/libc.so.6
+
+
+sudo find / 2>/dev/null
+
+sudo find / -maxdepth 1 2>/dev/null
+sudo find /home/cbx2012/此电脑/娱乐/ -maxdepth 2 2>/dev/null
+
+
+sudo find / -path /home -prune -o -name "libc.so.6" -print 2>/dev/null
+
+sudo find / -name "libc.so.6" -path /home -prune -o -print 2>/dev/null
+sudo find / -name "libc.so.6" -path /home -prune -o -print 2>/dev/null > abc.txt
+
+
+#很快
+sudo find / \( -path /home \) -prune -o -name "libc.so.6" -print 2>/dev/null
+#/home/ 后面加了/就没有排除目录 慢
+sudo find / \( -path /home/ \) -prune -o -name "libc.so.6" -print 2>/dev/null
+
+
+
+#很慢 可能查找了只是没显示查找到的文件 不加*就会显示（可能加*是限制显示）
+sudo find / -not -path "/home/*" -name "libc.so.6" 2>/dev/null
+sudo find / -name "libc.so.6" -not -path "/home/*" 2>/dev/null
+
+
+❯ sudo pacman -Sy core/glibc
+:: 正在同步软件包数据库...
+ cachyos 已经是最新版本
+ core 已经是最新版本
+ extra 已经是最新版本
+ multilib 已经是最新版本
+ archlinuxcn 已经是最新版本
+正在解析依赖关系...
+正在查找软件包冲突...
+错误：无法准备事务处理 (无法满足依赖关系)
+:: 安装 glibc (2.42+r17+gd7274d718e6f-1) 破坏依赖 'glibc=2.41+r48+g5cb575ca9a3d' （lib32-glibc 需要）
+
+~/文档
+❯
+
+
+================================================================
+
+❯ sudo find / \( -path /home -prune \) -o -name "libc.so.6" -print 2>/dev/null
+/usr/share/accounts/services/kde/libc.so.6
+/usr/lib32/libc.so.6
+/usr/lib/bash/libc.so.6
+/usr/lib/libc.so.6
+
+~
+❯ sudo find / \( -path /home -prune \) -o \( -path /usr/lib -prune \) -o -name "libc.so.6" -print 2>/dev/null
+/usr/share/accounts/services/kde/libc.so.6
+/usr/lib32/libc.so.6
+
+~
+❯ sudo find / -path /home -prune -o -path /usr/lib -prune -o -name "libc.so.6" -print 2>/dev/null
+/usr/share/accounts/services/kde/libc.so.6
+/usr/lib32/libc.so.6
+
+~
+❯ sudo find / -path /home -prune -o -name "libc.so.6" -print 2>/dev/null
+/usr/share/accounts/services/kde/libc.so.6
+/usr/lib32/libc.so.6
+/usr/lib/bash/libc.so.6
+/usr/lib/libc.so.6
+
+
+#####################################################
+#排除1个目录 或 2个目录（多个目录一次类推）
+sudo find / \( -path /home -prune \) -o -name "libc.so.6" -print 2>/dev/null
+sudo find / \( -path /home -prune \) -o \( -path /usr/lib -prune \) -o -name "libc.so.6" -print 2>/dev/null
+
+sudo find / -path /home -prune -o -name "libc.so.6" -print 2>/dev/null
+sudo find / -path /home -prune -o -path /usr/lib -prune -o -name "libc.so.6" -print 2>/dev/null
+#############################################################################
+
+sudo find / \( -path /home -o -path /usr/lib \) -prune -o -name "libc.so.6" -print 2>/dev/null
+
+
+find命令排除某些目录或文件
+
+# 在当前目录下排除abc目录，查找所有文件
+find . -path "./abc" -prune -o -print
+
+# 在当前目录下排除abc目录，查找所有以.txt结尾的文件【方式一】
+find . -path "./abc" -prune -o -name "*.txt" -print
+
+# 在当前目录下排除abc目录，查找所有以.txt结尾的文件【方式二】
+find . -name "*.txt" -not -path "./abc/*"
+
+# 在当前目录下排除abc和def目录，查找所有以.txt结尾的文件
+find . \( -path ./abc -o -path ./def \) -prune -o -name "*.txt" -print
+
+# 在当前目录下排除abc目录和def/h.txt文件，查找所有以.txt结尾的文件
+find . \( -path ./abc -o -path ./def/h.txt \) -prune -o -name "*.txt" -print
+
+# 在当前目录下排除abc目录和def/h.txt文件和jk目录，查找所有以.txt结尾的文件
+find . \( -path ./abc -o -path ./def/h.txt -o -path ./jk \) -prune -o -name "*.txt" -print
+
+# 在当前目录下查找所有不是以.html结尾的文件
+find . ! -name "*.html" -type f
+
+https://gitcode.csdn.net/65e95b0f1a836825ed790250.html

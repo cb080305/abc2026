@@ -1,0 +1,10 @@
+github 最大支持推送上传多大文件
+git push 推送一个 2.2GB 文件 推送到 2.18GiB 最后失败
+推送的大文件缓存在这里 .git/objects/pack/
+pack-941faebf44c19f9f960f48776ce975150de41aae.idx 大小 1.1 KiB
+pack-941faebf44c19f9f960f48776ce975150de41aae.pack 大小 2.2GiB
+每次都是推到 2.18 GiB 最后失败 什么原因详解
+
+如何删除 推送的缓存文件
+.git/objects/pack/ 文件夹里面的
+(.idx .pack) 文件
